@@ -892,3 +892,62 @@ a {
 
   margin:0
 }
+/* ===== HERO ANIMATIONS ===== */
+
+.hero-copy h1 {
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-copy h2 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-arabic {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.hero-text {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.9s;
+}
+
+.hero-media {
+  animation: zoomIn 1.5s ease forwards;
+}
+
+/* تأثير عند المرور بالماوس */
+.hero-copy h1:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+/* الحركة الأساسية */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* حركة الصورة */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
